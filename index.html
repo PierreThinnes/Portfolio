@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Portfolio</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">A propos</a></li>
+          <li><a href="#experience">Experiences</a></li>
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Portfolio</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">A propos</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experiences</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projets</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src=".\assets\Photo de profil-rond.webp" alt="Pierre THINNNES profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Bonjour, je suis</p>
+        <h1 class="title">Pierre THINNES</h1>
+        <p class="section__text__p2">Développeur Web & graphiste</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Resume_eng-XtendedGaming-vfinal.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/PierreThinnes'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Un peu plus à propos de moi</p>
+      <h1 class="title">A propos</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/WhatsApp Bild-moi.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>6 mois<br />FullStack Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Formation</h3>
+              <p>Art Appliqué<br />Design Graphique</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Je m'appelle Pierre Thinnes et je suis graphiste et développeur full stack.
+              Avec une passion inébranlable pour l'art et la créativité, j'allie mes compétences 
+              techniques à mon sens artistique pour créer des projets innovants et esthétiques.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Un peu plus sur mon parcours</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Développeur</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Intermédiaire</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Intermédiaire</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SASS</h3>
+                  <p>Intermédiaire</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Design Graphique</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Photoshop</h3>
+                  <p>Experimenté</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Illustrator</h3>
+                  <p>Experimenté</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Blender</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Lightroom</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Mes travaux récent</p>
+      <h1 class="title">Projets</h1>
+      <div class="experience-details-container">
+        
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="assets/Screenshot Kasa.png"
+                alt="Project Kasa"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Front-end du site Kasa</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/PierreThinnes/KasaApp'"
+              >
+                Github
+              </button>
+              <button  
+                class="btn btn-color-2 project-btn" 
+                data-modal-btn="projectModal1"
+              >
+                Voir Détails
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Screenshot Booki.png"
+                alt="Project Booki"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Front-end du site Booki</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/PierreThinnes/OpcBooki'"
+              >
+                Github
+              </button>
+              <button  
+                class="btn btn-color-2 project-btn" 
+                data-modal-btn="projectModal2"
+              >
+                Voir Détails
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/MVG.png"
+                alt="Project Mon Vieux Grimoire"
+                class="project-img3"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Mon vieux Grimoire</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/PierreThinnes/MonVieuxGrimoire'"
+              >
+                Github
+              </button>
+              <button  
+                class="btn btn-color-2 project-btn" 
+                data-modal-btn="projectModal3"
+              >
+                Voir Détails
+              </button>
+            </div>
+          </div>
+        
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Je suis à votre écoute</p>
+      <h1 class="title">Contactez moi</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">thinnes.kuso@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">A Propos</a></li>
+            <li><a href="#experience">Experiences</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Pierre THINNES. Tous droits réservés.</p>
+    </footer>
+    
+    <!-- Modal -->
+    <!-- Modal 1 -->
+    <div id="projectModal1" class="modal">
+      <div class="modal-content">
+        <span class="close" data-modal="projectModal1">&times;</span>
+        <h2>Projet KASA</h2>
+        <div class="screenshots">
+          <img src="assets/Kasascreenshot1.png" alt="Vue d'ensemble" class="left-img">
+          <div class="right-img">
+          <img src="assets/Kasa screenshot 2.png" alt="Vue d'une Card">
+          <img src="assets/Kasa screenshot3.png" alt="Vue de la rubrique A propros">
+          </div>
+        </div>
+          <p class="description">
+            Projet réalisé dans le cadre de ma formation OpenClassrooms de développeur front-end.
+            Développement du front d’un site de location d’hébergement avec React.
+            Création de composants React et gestion des états.
+            </p>
+            <div class="keywords">
+              <span class="keyword">HTML</span>
+              <span class="keyword">SASS</span>
+              <span class="keyword">React</span>
+              </div>
+              </div>
+              </div>
+              
+    <!-- Modal 2 -->
+    <div id="projectModal2" class="modal">
+      <div class="modal-content content2">
+          <span class="close" data-modal="projectModal2">&times;</span>
+          <h2>Projet Booki</h2>
+          <div class="screenshots">
+            <div class="right-img">
+            <img src="assets/Screenshot Booki 2.png" alt="Vue d'une Card">
+            <img src="assets/Screenshot Booki 3.png" alt="Vue de la rubrique A propros">
+            </div>
+          </div>
+            <p class="description">
+              Projet réalisé dans le cadre de ma formation OpenClassrooms de développeur front-end.
+              Développement du front-end du site de location d’hébergements Booki.
+            </p>
+            <div class="keywords">
+              <span class="keyword">HTML</span>
+              <span class="keyword">CSS</span>
+              </div>
+              </div>
+              </div>
+              
+    <!-- Modal 3 -->
+      <div id="projectModal3" class="modal">
+        <div class="modal-content">
+          <span class="close" data-modal="projectModal3">&times;</span>
+          <h2>Projet Mon vieux Grimoire</h2>
+          <div class="screenshots">
+            <img src="assets/Screenshot MVG 2.png" alt="Vue d'ensemble" class="left-img">
+            <div class="right-img">
+            <img src="assets/Screenshot MVG 1.png" alt="Vue d'une Card">
+            <img src="assets/Screenshot mvg 3.png" alt="Vue de la rubrique A propros">
+            </div>
+          </div>
+          <p class="description">
+            Projet réalisé dans le cadre de ma formation OpenClassrooms de développeur full-stack.
+            Développement du Backend de notre site de notation de livre en ligne Mon vieux Grimoire.
+          </p>
+          <div class="keywords">
+          <span class="keyword">NodeJS</span>
+          <span class="keyword">MongoDB</span>
+          <span class="keyword">ExpressJs</span>
+          </div>
+          </div>
+          </div>
+    
+        <script src="script.js"></script>
+  </body>
+</html>
+                        
