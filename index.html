@@ -1,13 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Pierre Thinnes - Développeur Web et graphiste. Découvrez mes expériences, projets et compétences en développement Full Stack et design graphique.">
+    <meta name="keywords" content="Pierre Thinnes, développeur web, graphiste, portfolio, projets, expériences, full stack, design graphique, HTML, CSS, JavaScript, NodeJS, React, Photoshop, Illustrator">
+    <meta name="language" content="fr-FR">
+    <meta name="geo.region" content="FR">
+    <meta name="geo.placename" content="France">
+    <meta name="geo.position" content="latitude;longitude">
+    <meta name="ICBM" content="latitude, longitude">
+    <link rel="canonical" href="URL_de_votre_site">
+    <link rel="icon" href="URL_de_votre_favicon.ico" type="image/x-icon">
+
+    <!-- Open Graph  -->
+    <meta property="og:title" content="Portfolio de Pierre Thinnes">
+    <meta property="og:description" content="Développeur Web et graphiste. Découvrez mes expériences, projets et compétences en développement Full Stack et design graphique.">
+    <meta property="og:image" content="URL_de_votre_image_de_prévisualisation">
+    <meta property="og:url" content="URL_de_votre_site">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card  -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Portfolio de Pierre Thinnes">
+    <meta name="twitter:description" content="Développeur Web et graphiste. Découvrez mes expériences, projets et compétences en développement Full Stack et design graphique.">
+    <meta name="twitter:image" content="URL_de_votre_image_de_prévisualisation">
+
     <title>Mon Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
   <body>
     <nav id="desktop-nav">
       <div class="logo">Portfolio</div>
@@ -28,12 +51,12 @@
           <span></span>
           <span></span>
         </div>
-        <div class="menu-links">
+        <ul class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">A propos</a></li>
           <li><a href="#experience" onclick="toggleMenu()">Experiences</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projets</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
+        </ul>
       </div>
     </nav>
     <section id="profile">
@@ -66,7 +89,7 @@
             src="./assets/github.png"
             alt="My Github profile"
             class="icon"
-            onclick="location.href='https://github.com/PierreThinnes'"
+            onclick="window.open('https://github.com/PierreThinnes', '_blank')"
           />
         </div>
       </div>
@@ -270,7 +293,7 @@
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/PierreThinnes/KasaApp'"
+                onclick="window.open('https://github.com/PierreThinnes/KasaApp', '_blank')"
               >
                 Github
               </button>
@@ -294,7 +317,7 @@
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/PierreThinnes/OpcBooki'"
+                onclick="window.open('https://github.com/PierreThinnes/OpcBooki', '_blank')"
               >
                 Github
               </button>
@@ -318,7 +341,7 @@
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/PierreThinnes/MonVieuxGrimoire'"
+                onclick="window.open('https://github.com/PierreThinnes/MonVieuxGrimoire', '_blank')"
               >
                 Github
               </button>
